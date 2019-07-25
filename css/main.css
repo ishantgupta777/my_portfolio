@@ -1,0 +1,219 @@
+:root{
+    --pink : #e040fb;
+    --blue : #1fb6e4;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    min-height: 100%;
+    font-size: 16px;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.imgHome{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(45deg,#0ed3c9,hsl(199, 96%, 63%)) */
+    background: #0099e5;
+}
+.imgHome img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+section.homePage{
+    text-align: center;
+}
+.info{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: inherit;
+    font-weight: 600;
+    padding : 2rem 2rem;
+    border-radius: 20px;
+}
+/* .info:hover{
+    background: #ffeb3b;
+    transition: 300ms ease-in-out;
+    color: black;
+    opacity: .5;
+}
+.info:hover .imgHome, .info:hover .info{
+    opacity: 1;
+} */
+section.homePage h2{
+    font-weight: bold;
+}
+section.homePage p{
+    font-size: 1.5rem;
+    font-weight: normal;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+section.homePage span{
+   color: #e040fb;
+   font-size: 5rem;
+}
+.info button{
+    background: transparent;
+    border: none;
+    /* position: absolute;
+    top: 120%; */
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+}
+.info button:hover{
+    background: #e040fb;
+    transition: 300ms;
+    border: none;
+}
+.info button i{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+.social{
+    margin: 3rem auto;
+
+}
+.social a{
+    text-align: center;
+    padding: 0;
+}
+.social img{
+    width: 40px;
+    border-radius: 50%;
+    background: #1fb6e4;
+    background: linear-gradient(blue,var(--blue));
+    margin-left: 10px;
+}
+.social img:hover{
+    width: 43px;
+    margin-left: 7px;
+}
+.social img:hover{
+    cursor: pointer;
+    transition: 300ms ease;
+}
+nav{
+    background : transparent;
+}
+.navbar .navbar-brand{
+    margin-left: 10%;
+    border : 2px solid #e040fb;
+    padding: 3px 12px;
+}
+.navbar .navbar-brand:hover{
+    background: var(--pink);
+    color: white;
+}
+.navbar .navbar-nav{
+        margin-right: 10%;
+}
+.navbar .navbar-nav li{
+    border : 2px solid #e040fb;
+    padding: 0px 12px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.navbar .navbar-nav li a{
+    color: #e040fb;
+}
+.navbar .navbar-nav li:hover{
+    background: var(--pink);
+    transition: 200ms;
+}
+.skills{
+    text-align: center;
+    padding: 10rem 0;
+    background: linear-gradient(#4fc3f7,#7b1fa2);
+    /* overflow: hidden; */
+    width: 100vw;
+}
+/* .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+} */
+.skills h1{
+    font-weight: 400;
+    padding-bottom: 2rem;
+    font-family: "Cambo", "Times New Roman", serif;
+    color: white;
+    font-size: 4rem;
+}
+.cards ul{
+    list-style-type: none;
+}
+.cards div{
+    display: none;
+}
+.cards .active{
+    width: 70%;
+    margin: auto;
+    transition: 200ms ease-in-out;
+    opacity: 1;
+    display: block;
+    transition: 300ms ease-in;
+}
+.active h3{
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+}
+.active li div{
+   width: 120px;
+   height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.active ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.active ul img{
+    width: 120px;
+    height: 120px;
+    margin: 1.2rem auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 10px;
+}
+.active li{
+    font-size: 1.3rem;
+    margin: 3rem auto;
+    font-weight: 400;
+}
+.arrow{
+    position: absolute;
+    top: 150%;
+    left:3%;
+    cursor: pointer;
+}
+.right{
+    position: absolute;
+    top: 150%;
+    left: 90%;
+}
+
