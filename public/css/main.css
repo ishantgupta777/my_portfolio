@@ -167,9 +167,11 @@ nav{
 div.cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 3rem;
     text-align: center;
-    max-width: 1300px;
+    max-width: 1450px;
     margin: auto;
+    padding: 0 3rem;
 }
 .cards div{
     border: 2px solid white;
@@ -209,7 +211,9 @@ div.projects{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     margin: auto;
-    max-width: 1300px;
+    grid-gap: 1.5rem;
+    width: 100%;
+    max-width: 1450px;
 }
 .project{
     background: #0099e5;
@@ -302,7 +306,8 @@ div.projects{
     font-family: 'Indie Flower', cursive;
 }
 .about .info2{
-    width: 50%;
+    width: 80%;
+    margin: auto;
 }
 .about img{
     width: 400px;
@@ -365,4 +370,201 @@ input:focus{
 .msgForm{
     color: #ff3d00;
     font-weight: 400;
+}
+.nav-social{
+    margin-top: 1rem;
+}
+nav{
+    max-width: 100%;
+    overflow: hidden;
+}
+.col-md-3 .text-center{
+    padding:0;
+}
+section#contact{
+    width: 100%;
+    overflow: hidden;
+}
+@media (max-width:1700px){
+    .nav-social img{
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width:1490px){
+    html{
+        font-size: 14px;
+    }
+    .nav-social img{
+        margin-left: 4rem;
+    }
+    .project{
+        width: 400px;
+    }
+}
+
+@media (max-width:1420px){
+    html{
+        font-size: 14px;
+    }
+    .nav-social img{
+        margin-left: 4rem;
+    }
+    
+}
+@media (max-width:1070px){
+    html{
+        font-size: 14px;
+    }
+    .nav-social img{
+        margin-left: 4rem;
+    }
+    .projects{
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    }
+    .project{
+        width: 400px;
+        height: 320px;
+    }
+    .image img{
+        margin-right: 20px;
+    }
+    
+}
+@media (max-width:993px){
+    html{
+        font-size: 14px;
+    }
+    .nav-social img{
+        margin-left: 4rem;
+        margin-right: 0;
+    }
+    .navbar .navbar-nav li{
+        border: none;
+    }
+    .image img{
+        margin-right: 20px;
+        width: 350px;
+        height: 350px;
+    }
+    .navbar .navbar-nav li{
+        padding-right: 0;
+    }
+    .cards div{
+        height: 470px;
+    }
+}
+
+@media (max-width:770px){
+    html{
+        font-size: 12px;
+    }
+    .formdiv{
+        width:80%;
+        margin: auto;
+    }
+    .nav-social img{
+        float: none;
+    }
+    .nav-social{
+        display: flex;
+    }
+    .nav-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cards div{
+        height: 450px;
+    }
+    .image img{
+        width: 300px;
+        height: 300px;
+    }
+    #home-p{
+        width: 120%;
+        margin: auto;
+        transform: translateX(-10%);
+    }
+}
+@media (max-width:770px){
+    html{
+        font-size: 10.5px;
+    }
+    .image img{
+        width: 250px;
+        height: 250px;
+    }
+    .cards div{
+        height: 400px;
+    }
+    .skills li{
+        font-size: 1.5rem;
+    }
+    
+}
+@media (max-width:630px){
+    .image img{
+        width: 170px;
+        height: 170px;
+        margin-top: 4rem;
+    }
+    .contact h1{
+        font-size: 2rem;
+    }
+    .nav-social img{
+        width: 60px;
+    }
+    .project{
+        width: 320px;
+        height: 260px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about img{
+        float: none;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:520px){
+    .info2{
+        padding: 2rem 0;
+    }
+    section.projects{
+        padding: 2rem;
+    }
+    .projects{
+        margin: auto;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    }
+    .project{
+        width: 280px;
+        height: 270px;
+    }
+    .contact h1{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:520px){
+    .projects{
+        margin: auto;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        text-align: center;
+    }
+    div.project{
+        width: 250px;
+        padding-right: 4rem;
+        margin-left: 4rem;
+    }
+    .contact h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:400px){
+    div.project{
+        width: 200px;
+        margin-left: 6rem;
+    }
 }

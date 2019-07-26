@@ -22,7 +22,7 @@
 </head>
 <body>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar " style="width: 95%;margin:auto;min-width: 300px;padding: 0;">
                 <a class="navbar-brand" href="#home" style="color: #7b1fa2"><strong>Ishant</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
         <div class="info" >
             <div data-aos="zoom-in">
                 <h2>Hi I'm <span>Ishant</span></h2>
-            <p>
+            <p id="home-p">
             I am a full stack web developer. I love making beautiful and responsive websites and webapps.
             </p>
             </div>
@@ -202,8 +202,9 @@
             <div class="row">
         
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="/contact" method="POST" class="container"> 
+                <div class="col-md-1"></div>
+                <div class="col-md-8 mb-md-0 mb-5 formdiv" >
+                    <form id="contact-form" name="contact-form" action="/contact" method="POST" class=" ml-5"> 
         
                         <!--Grid row-->
                         <div class="row">
@@ -266,7 +267,7 @@
                 <!--Grid column-->
         
                 <!--Grid column-->
-                <div class="col-md-3 text-center ">
+                <div class="col-md-2 text-center social-div">
                         <ul class="list-unstyled mb-0 nav-social">
                                 <li><a href=""> <img src="./img/instagram.png" alt="insta"> </a></li>
                 
@@ -275,6 +276,8 @@
                                 <li><a href=""> <img src="./img/github-logo.png" alt="github"> </a></li>
                             </ul>
                 </div>
+                <div class="col-md-1"></div>
+
                 <!--Grid column-->
         
             </div>
@@ -283,7 +286,7 @@
 
 </body>
 <script>
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   </script>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
