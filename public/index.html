@@ -171,6 +171,7 @@
         <div class="info2">
             <h1>about me</h1>
             <p>hey i'm ishant. i'm a coder and web developer. i am doing my B.E. in computer science from Bits Pilani Goa Campus. i am always ready to tackle problems and work on a interesting project. i'm passionate about </p>
+            <p class="formMsg">Your message is sent.</p>
         </div>
     </section>
 
@@ -191,13 +192,14 @@
             <div class="contact">
                     <h1>interesting in collaborating and investing</h1>
                     <p>contact me here.....     </p>
+                    <p class="msgForm"></p>
              </div>
         
             <div class="row">
         
                 <!--Grid column-->
                 <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST" class="container"> 
+                    <form id="contact-form" name="contact-form" action="/contact" method="POST" class="container"> 
         
                         <!--Grid row-->
                         <div class="row">
@@ -214,7 +216,7 @@
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control" style="color: white">
+                                    <input type="text" id="email" name="email" class="form-control" style="color: white" required>
                                     <label for="email" class="">Your email</label>
                                 </div>
                             </div>
@@ -248,13 +250,14 @@
                             </div>
                         </div>
                         <!--Grid row-->
-        
+                        <input type="submit" id="formSubmit" value="Submit" class="btn btn-primary">
+
                     </form>
         
-                    <div class="text-center text-md-left container">
+                    <!-- <div class="text-center text-md-left container">
                         <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                    </div>
-                    <div class="status"></div>
+                    </div> -->
+                    <!-- <div class="status"></div> -->
                 </div>
                 <!--Grid column-->
         
@@ -283,4 +286,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+<script src="app.js"></script>
+    <script src="js/app.js"></script>
 </html>

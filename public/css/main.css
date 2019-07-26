@@ -16,7 +16,7 @@ body{
     font-size: 16px;
     width: 100vw;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .imgHome{
     overflow: hidden;
@@ -359,4 +359,8 @@ div.contact{
 }
 input:focus{
     color: white;
+}
+.msgForm{
+    color: #ff3d00;
+    font-weight: 400;
 }

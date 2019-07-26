@@ -1,0 +1,30 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env  nodemon src/index.js -e js,html,css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishantgupta777/my_portfolio.git"
+  },
+  "author": "Ishant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishantgupta777/my_portfolio/issues"
+  },
+  "homepage": "https://github.com/ishantgupta777/my_portfolio#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "body-parser": "^1.19.0",
+    "env-cmd": "^9.0.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
