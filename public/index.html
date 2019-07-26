@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ishant Gupta</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
@@ -46,11 +48,13 @@
         <div class="imgHome">
             <img src="./img/blur-breathtaking-clouds-1903702-min.jpg" alt="">
         </div>
-        <div class="info">
-            <h2>Hi I'm <span>Ishant</span></h2>
+        <div class="info" >
+            <div data-aos="zoom-in">
+                <h2>Hi I'm <span>Ishant</span></h2>
             <p>
             I am a full stack web developer. I love making beautiful and responsive websites and webapps.
             </p>
+            </div>
             <div class="social">
                 <a href=""> <img src="./img/instagram.png" alt="insta"> </a>
                 <a href=""> <img src="./img/email.png" alt="email"> </a>
@@ -62,9 +66,9 @@
         </div>
     </section>
     
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" >
         <h1>My Skills</h1>
-        <div class="cards">
+        <div class="cards" data-aos="fade-up">
                 <div class="languages">
                     <img src="./img/baseline_keyboard_voice_white_48dp.png" alt="">
                         <h3>languages</h3>
@@ -117,21 +121,21 @@
     <section class="projects" id="projects">
         <h1>My recent work</h1>
         <div class="projects">
-                <div class="project three">
+                <div class="project three" data-aos="zoom-in-up">
                         <div class="content">
                                 <p>a event management app made using html, css, js, JQuery and bootstrap</p>
                                 <button onclick=" window.open('https://github.com/ishantgupta777/event_management_project', '_blank'); return false;">GitHub</button>
                                 <button onclick=" window.open('http://www.qstp.epizy.com', '_blank'); return false;">Live</button>
                         </div>
                     </div>
-                    <div class="project two">
+                    <div class="project two" data-aos="zoom-in-up">
                             <div class="content">
                                     <p> manage your budget using this app build with html, css, bootstrap, js</p>
                                     <button onclick=" window.open('https://github.com/ishantgupta777/budget_webApp', '_blank'); return false;">GitHub</button>
                                     <button onclick=" window.open('http://budgetwebapp.epizy.com', '_blank'); return false;">Live</button>
                             </div>
                         </div>
-            <div class="project one">
+            <div class="project one" data-aos="zoom-in-up">
                 <div class="content">
                         <p>responsive website using mostly with css grid</p>
                         <button onclick=" window.open('https://github.com/ishantgupta777/website_css_grid', '_blank'); return false;">GitHub</button>
@@ -140,21 +144,21 @@
             </div>
             
                 
-                    <div class="project four">
+                    <div class="project four" data-aos="zoom-in-up">
                             <div class="content">
                                     <p>a weather app to show temperature and precipitation of any location (frontend part remaining)</p>
                                     <button onclick=" window.open('https://github.com/ishantgupta777/weather_app', '_blank'); return false;">GitHub</button>
                                     <button onclick=" window.open('https://ishant-weather-app.herokuapp.com/', '_blank'); return false;">Live</button>
                             </div>
                         </div>
-                        <div class="project five">
+                        <div class="project five" data-aos="zoom-in-up">
                                 <div class="content">
                                         <p>a landing page made using html and css</p>
                                         <button onclick=" window.open('https://github.com/ishantgupta777/laptop_landing_page', '_blank'); return false;">GitHub</button>
                                         <button onclick=" window.open('https://5d2111e43c36dd0ec24f1099--infallible-northcutt-168e78.netlify.com/', '_blank'); return false;">Live</button>
                                 </div>
                             </div>
-                            <div class="project six">
+                            <div class="project six" data-aos="zoom-in-up">
                                     <div class="content">
                                             <p>a image gallery to showcase your tallent</p>
                                             <button onclick=" window.open('https://github.com/ishantgupta777/image_gallery', '_blank'); return false;">GitHub</button>
@@ -278,6 +282,9 @@
         </section>
 
 </body>
+<script>
+    AOS.init();
+  </script>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->

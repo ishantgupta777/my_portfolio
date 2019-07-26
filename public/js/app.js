@@ -12,3 +12,6 @@ document.querySelector('#contact-form').addEventListener('submit',(e)=>{
         document.querySelector('.msgForm').textContent = ''
       },2000)
 })
+
+
+
