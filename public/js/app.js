@@ -15,4 +15,3 @@ $(document).ready(()=>{
       },2000)
 })
 })
-$('.js-preloader').preloadinator();
