@@ -1,4 +1,6 @@
-document.querySelector('#contact-form').addEventListener('submit',(e)=>{
+$(document).ready(()=>{
+  console.log('application started')
+  document.querySelector('#contact-form').addEventListener('submit',(e)=>{
     e.preventDefault()
 
     $.ajax({
@@ -12,6 +14,4 @@ document.querySelector('#contact-form').addEventListener('submit',(e)=>{
         document.querySelector('.msgForm').textContent = ''
       },2000)
 })
-
-
-
+})

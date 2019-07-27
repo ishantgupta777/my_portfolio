@@ -17,7 +17,7 @@ app.listen(process.env.PORT,()=>{
     console.log(`listening on port ${port}`)
 })
 
-mongoose.connect('mongodb://localhost:27017/portfoio_data',{
+mongoose.connect( process.env.MONGODB_URL ,{
     useNewUrlParser : true,
     useCreateIndex : true
 });
@@ -52,4 +52,3 @@ app.post('/contact',(req,res)=>{
     sendMail.sendWelcomeEmail(req.body)
     res.send()
 })
-
