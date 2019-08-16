@@ -12,6 +12,18 @@ const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(publicPath))
+app.use(function (req, res, next) {
+    if (req.secure) return next()
+  
+    const target = url.format({
+      protocol: 'https:',
+      host: req.get('Host'),
+      pathname: req.url
+    })
+  
+    res.redirect(301, target)
+  })
+
 
 
 const port = process.env.PORT
@@ -44,9 +56,6 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('user',userSchema)
 
-app.get("*", function(request, response){
-    response.redirect("https://" + request.headers.host + request.url);
-  });
 
 app.get('/',(req,res)=>{
     res.sendFile(publicPath)
