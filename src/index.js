@@ -12,18 +12,6 @@ const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(publicPath))
-app.use(function (req, res, next) {
-    if (req.secure) return next()
-  
-    const target = url.format({
-      protocol: 'https:',
-      host: req.get('Host'),
-      pathname: req.url
-    })
-  
-    res.redirect(301, target)
-  })
-
 
 
 const port = process.env.PORT
