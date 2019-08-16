@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const path = require('path')
 const bodyParser = require('body-parser')
 const sendMail = require('./email')
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
+
 
 const publicPath = path.join(__dirname,'../public')
 const indexPath = path.join(__dirname,'../public/index.html')
@@ -11,6 +13,8 @@ const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(publicPath))
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
+
 
 const port = process.env.PORT
 app.listen(process.env.PORT,()=>{
