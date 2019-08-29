@@ -19,7 +19,7 @@ $(document).ready(()=>{
 $(document).scroll(function() {
   if($(document).scrollTop() >  50){
       $('nav').css({
-          'background':'#4AA4E6',
+          'background':'#4aa4e6',
           'transition' : 'all 300ms ease-in-out',
           'opacity' : '.95'
        });
