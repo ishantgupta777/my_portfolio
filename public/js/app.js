@@ -14,3 +14,22 @@ $(document).ready(()=>{
       },2000)
 })
 })
+
+//--------------nav colour change------------------
+$(document).scroll(function() {
+  if($(document).scrollTop() >  50){
+      $('nav').css({
+          'background':'#4AA4E6',
+          'transition' : 'all 300ms ease-in-out',
+          'opacity' : '.95'
+       });
+       $('.nav-link, .navbar-brand').css({
+         'color' : 'white'
+       })
+  }else{
+   $('nav').css({
+       'background':'transparent',
+       'transition' : 'all 300ms ease-in'
+    });
+  }
+})
