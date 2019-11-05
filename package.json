@@ -24,7 +24,7 @@
     "env-cmd": "^9.0.3",
     "express": "^4.17.1",
     "express-http-to-https": "^1.1.4",
-    "mongoose": "^5.6.6"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
