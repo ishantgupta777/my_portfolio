@@ -60,7 +60,7 @@ section.homePage h2 {
 section.homePage p {
     font-size: 1.5rem;
     font-weight: 400;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 1rem
 }
@@ -156,7 +156,8 @@ nav {
 
 .navbar .navbar-nav li:hover {
     background: var(--pink);
-    transition: .2s
+    transition: .2s;
+    color: white;
 }
 
 .skills {
@@ -220,14 +221,14 @@ div.cards {
 
 section.projects {
     text-align: center;
-    padding: 8rem
+    padding: 3rem 5rem
 }
 
 div.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: auto;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     width: 100%;
     max-width: 1450px
 }
@@ -242,7 +243,8 @@ div.projects {
     transition: all .45s ease-in-out;
     background-position: top;
     opacity: 1;
-    background-size: cover
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .project:hover {
@@ -296,15 +298,15 @@ div.projects {
 }
 
 .two {
-    background-image: url(../img/screencapture-5d229562350b65ce3ec20eed-xenodochial-meninsky-1c69a3-netlify-2019-07-25-18_27_58.png)
+    background-image: url(../img/kratos.jpg)
 }
 
 .three {
-    background-image: url(../img/screencapture-budgetwebapp-epizy-2019-07-25-18_26_23.png)
+    background-image: url('../img/spree\ \(1\).jpg')
 }
 
 .four {
-    background-image: url(../img/screencapture-qstp-epizy-2019-07-25-18_24_03.png)
+    background-image: url(../img/lifemaxx.jpg)
 }
 
 .five {
@@ -326,7 +328,7 @@ div.projects {
     background: #8c43ff;
     color: #fff;
     width: 100%;
-    margin: 8rem auto;
+    margin: 5rem auto;
     padding: 2rem 0
 }
 
